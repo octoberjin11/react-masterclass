@@ -3,9 +3,15 @@ import styled from "styled-components";
 const Father = styled.div`
     display: flex;
 `;
+const Btn = styled.button`
+    background-color: tomato;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+`;
 
-// styled components가 컴포넌트를 생성할 때, 아래와 같이 속성값을 설정할 수 있다.
-const Input = styled.input.attrs({ required: true, minLength: 10 })`
+const Input = styled.input.attrs({ required: true })`
     background-color: tomato;
 `;
 

@@ -4,8 +4,8 @@ const Father = styled.div`
     display: flex;
 `;
 
-// styled components가 컴포넌트를 생성할 때, 아래와 같이 속성값을 설정할 수 있다.
-const Input = styled.input.attrs({ required: true, minLength: 10 })`
+// styled components가 컴포넌트를 생성할 때, 속성값을 설정할 수 있다.
+const Input = styled.input.attrs({ required: true })`
     background-color: tomato;
 `;
 
