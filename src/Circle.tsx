@@ -17,12 +17,15 @@ const Container = styled.div<ContainerProps>`
 interface CircleProps {
     bgColor: string;
     borderColor?: string; // ? 을 작성하면 필수 요소가 아니라 선택 요소임을 나타낸다.
+    text?: string;
 }
 
-function Circle({ bgColor, borderColor }: CircleProps) {
+function Circle({ bgColor, borderColor, text = "default text" }: CircleProps) {
     return (
         // borderColor 에서 사용한 ?? 의미 >> borderColor의 초기값을 bgColor으로 선언해준다.
-        <Container bgColor={bgColor} borderColor={borderColor ?? bgColor} />
+        <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}>
+            {text}
+        </Container>
     );
 }
 
