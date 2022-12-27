@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-const Father = styled.div`
-    display: flex;
+const Title = styled.h1`
+    color: ${(props) => props.theme.textColor};
 `;
 
-// styled components가 컴포넌트를 생성할 때, 아래와 같이 속성값을 설정할 수 있다.
-const Input = styled.input.attrs({ required: true, minLength: 10 })`
-    background-color: tomato;
+const Wrapper = styled.div`
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 function App() {
     return (
-        <Father as="header">
-            <Input />
-            <Input />
-            <Input />
-            <Input />
-            <Input />
-        </Father>
+        <Wrapper>
+            <Title>Hello</Title>
+        </Wrapper>
     );
 }
 
